@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pyfusion_v1"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
     {name = "PyFusion Team", email = "anshumansingh3697@gmail.com"},
 ]
@@ -36,6 +36,7 @@ dependencies = [
 "Homepage" = "https://github.com/anshuman365/pyfusion"
 "Bug Reports" = "https://github.com/anshuman365/pyfusion/issues"
 "Source" = "https://github.com/anshuman365/pyfusion"
+"Documentation" = "https://github.com/anshuman365/pyfusion#readme"
 
 [project.optional-dependencies]
 dev = [
@@ -43,3 +44,6 @@ dev = [
     "black",
     "flake8",
 ]
+
+[tool.setuptools.package-data]
+"pyfusion_v1" = ["assets/*.jpg", "assets/*.png"]

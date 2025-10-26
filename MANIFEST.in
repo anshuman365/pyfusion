@@ -1,5 +1,5 @@
-include README.md
 include LICENSE
+include README.md
 include requirements.txt
 include pyproject.toml
-recursive-include examples *.py
+recursive-include pyfusion_v1/assets *.jpg *.png *.jpeg
