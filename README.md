@@ -1,8 +1,11 @@
 # PyFusion - All-in-One Python Framework 🚀
 
+![PyFusion Logo](pyfusion_v1/assets/logo.jpg)
+
 [![PyPI version](https://img.shields.io/pypi/v/pyfusion-v1.svg)](https://pypi.org/project/pyfusion-v1/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/pyfusion-v1.svg)](https://pypi.org/project/pyfusion-v1/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Downloads](https://img.shields.io/pypi/dm/pyfusion-v1.svg)](https://pypi.org/project/pyfusion-v1/)
 
 A comprehensive Python framework that bundles web development, database operations, and utility functions into a single, easy-to-use package.
 
@@ -13,24 +16,28 @@ A comprehensive Python framework that bundles web development, database operatio
 - **HTTP Client** - Robust HTTP client for API interactions
 - **Background Server** - Run servers in background threads
 - **API Endpoints** - Easy creation of RESTful APIs
+- **HTML Templates** - Serve dynamic HTML content
 
 ### 💾 Database Management
 - **SQLite Integration** - Built-in database manager with ORM-like interface
 - **CRUD Operations** - Simple insert, update, delete, and query methods
 - **Key-Value Store** - Generic app data storage
 - **Auto-setup** - Automatic table creation and connection management
+- **Transaction Support** - Safe database operations
 
 ### 🔧 Utilities
 - **File Operations** - JSON, CSV, and text file handling
 - **Network Tools** - Internet connectivity checks, port scanning, IP detection
 - **Data Validation** - Email, phone, password strength validation
 - **Data Formatting** - Date, currency, and hashing utilities
+- **Security** - Data hashing and input sanitization
 
 ### ⚡ Easy to Use
 - **Auto-dependency Installation** - Automatically installs required packages
 - **Simple Import** - Single import for all components
 - **Comprehensive Examples** - Ready-to-run demo code
 - **Production Ready** - Well-tested and documented
+- **Zero Configuration** - Works out of the box
 
 ## 🚀 Quick Installation
 
@@ -139,6 +146,8 @@ print(NetworkTools.get_local_ip())    # 192.168.1.100
 ```
 pyfusion_v1/
 ├── __init__.py              # Main package initialization
+├── assets/
+│   └── logo.jpg            # Project logo
 ├── web/
 │   ├── __init__.py
 │   ├── server.py           # WebServer class
@@ -161,6 +170,23 @@ Check the examples/ directory for complete working examples:
 · database_demo.py - Database operations demo
 · full_stack.py - Complete full-stack application
 
+Running Examples:
+
+```bash
+# Clone the repository
+git clone https://github.com/anshuman365/pyfusion.git
+cd pyfusion
+
+# Run web application example
+python examples/web_app.py
+
+# Run database demo
+python examples/database_demo.py
+
+# Run full-stack example
+python examples/full_stack.py
+```
+
 🔧 Requirements
 
 · Python 3.6 or higher
@@ -169,6 +195,15 @@ Check the examples/ directory for complete working examples:
   · Requests >= 2.25.0
   · SQLAlchemy >= 1.4.0
   · Jinja2 >= 3.0.0
+
+🎯 Use Cases
+
+· Rapid Prototyping - Quickly build MVP applications
+· Learning Tool - Perfect for beginners learning web development
+· Internal Tools - Build admin panels and internal dashboards
+· API Development - Create RESTful APIs with minimal setup
+· Full-Stack Apps - End-to-end web applications
+· Scripting - Enhanced scripting with database and web capabilities
 
 🤝 Contributing
 
@@ -180,6 +215,14 @@ We welcome contributions! Please feel free to submit issues, feature requests, o
 4. Push to the branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
 
+Development Setup:
+
+```bash
+git clone https://github.com/anshuman365/pyfusion.git
+cd pyfusion
+pip install -e .
+```
+
 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
@@ -188,12 +231,36 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 If you encounter any bugs or have suggestions, please open an issue.
 
+❓ FAQ
+
+Q: Is PyFusion suitable for production use?
+A: Yes! PyFusion is built with production-ready components and includes proper error handling.
+
+Q: Can I use PyFusion with other databases?
+A: Currently PyFusion uses SQLite, but you can extend it to support other databases.
+
+Q: How is this different from Flask/Django?
+A: PyFusion provides an all-in-one solution with built-in database, HTTP client, and utilities, reducing setup time.
+
+Q: Is there documentation?
+A: Comprehensive documentation is available in the README and code examples.
+
 🔗 Links
 
 · PyPI: https://pypi.org/project/pyfusion-v1/
-· Documentation: Coming soon!
-· Source Code: https://github.com/anshuman365/pyfusion
+· GitHub: https://github.com/anshuman365/pyfusion
+· Issue Tracker: https://github.com/anshuman365/pyfusion/issues
+
+📞 Support
+
+If you need help or have questions:
+
+1. Check the examples directory
+2. Open an issue on GitHub
+3. Review the source code documentation
 
 ---
 
 Made with ❤️ by PyFusion Team
+
+Simplifying Python development, one line at a time.
