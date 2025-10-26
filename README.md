@@ -1,6 +1,6 @@
 # PyFusion - All-in-One Python Framework 🚀
 
-![PyFusion Logo](pyfusion_v1/assets/logo.jpg)
+![PyFusion Logo](https://raw.githubusercontent.com/anshuman365/pyfusion/refs/heads/main/pyfusion_v1/assets/logo.jpg)
 
 [![PyPI version](https://img.shields.io/pypi/v/pyfusion-v1.svg)](https://pypi.org/project/pyfusion-v1/)
 [![Python Versions](https://img.shields.io/pypi/pyversions/pyfusion-v1.svg)](https://pypi.org/project/pyfusion-v1/)
