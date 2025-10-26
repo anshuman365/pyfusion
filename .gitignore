@@ -1,0 +1,17 @@
+# Ignore build and distribution directories
+dist/
+projects/
+pyfusion_v1.egg-info/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.swp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
