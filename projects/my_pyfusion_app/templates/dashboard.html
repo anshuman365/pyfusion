@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PyFusion Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: 0 auto; }
+        .card { border: 1px solid #ddd; padding: 20px; margin: 10px 0; border-radius: 8px; }
+        .success { background-color: #d4edda; border-color: #c3e6cb; }
+        .error { background-color: #f8d7da; border-color: #f5c6cb; }
+        .info { background-color: #d1ecf1; border-color: #bee5eb; }
+        .nav { background: #f8f9fa; padding: 10px; border-radius: 5px; margin: 10px 0; }
+        .nav a { margin-right: 15px; text-decoration: none; color: #007bff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 {{ app_name }}</h1>
+        
+        <div class="nav">
+            <a href="/dashboard">Dashboard</a>
+            <a href="/users">Users</a>
+            <a href="/app_health">Health</a>
+            <a href="/demo/validation">Validation Demo</a>
+            <a href="/demo/formatting">Formatting Demo</a>
+        </div>
+        
+        <div class="card info">
+            <h3>System Status</h3>
+            <p><strong>Local IP:</strong> {{ local_ip }}</p>
+            <p><strong>Internet:</strong> {{ internet_status }}</p>
+            <p><strong>Server Port:</strong> {{ server_port }}</p>
+        </div>
+        
+        <div class="card">
+            <h3>User Management</h3>
+            <form action="/add_user" method="POST">
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <button type="submit">Add User</button>
+            </form>
+        </div>
+        
+        <div class="card">
+            <h3>Quick Links</h3>
+            <a href="/users"><button>View All Users</button></a>
+            <a href="/app_health"><button>Health Check</button></a>
+            <a href="/demo/validation"><button>Validation Demo</button></a>
+            <a href="/demo/formatting"><button>Formatting Demo</button></a>
+        </div>
+    </div>
+</body>
+</html>

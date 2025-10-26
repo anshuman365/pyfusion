@@ -1,0 +1,14 @@
+{
+    "app_name": "PyFusion Demo App",
+    "version": "1.0.0",
+    "database": "app_data.sqlite",
+    "server": {
+        "host": "localhost",
+        "port": 8080
+    },
+    "features": {
+        "web_server": true,
+        "database": true,
+        "file_operations": true
+    }
+}
